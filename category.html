@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Category - PrintLearn Kids</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">📚</div>
+        <span>PrintLearn Kids</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="category.html?cat=nameplates">Name Plates</a></li>
+        <li><a href="category.html?cat=worksheets">Worksheets</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn">🔍</button>
+        <button class="icon-btn">❤️</button>
+        <button class="icon-btn">🛒<span class="cart-badge">0</span></button>
+        <button class="mobile-toggle">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="container">
+      <h1 id="categoryTitle">Category</h1>
+      <p id="categorySubtitle">Browse our collection</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> / <span id="breadcrumbCat">Category</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="section">
+      <div class="products-grid" id="productsContainer"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">📚</div>
+            <span>PrintLearn Kids</span>
+          </a>
+          <p>Creating beautiful, educational printables.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="category.html?cat=nameplates">Name Plates</a></li>
+            <li><a href="shop.html">All Products</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 PrintLearn Kids. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Dynamic category titles
+    const categoryData = {
+      nameplates: { title: "Name Plates 🏷️", subtitle: "Beautiful printable name plates for every theme" },
+      worksheets: { title: "Worksheets 📝", subtitle: "Fun learning worksheets for kids" },
+      certificates: { title: "Certificates 🏆", subtitle: "Reward certificates and achievement awards" },
+      flashcards: { title: "Flashcards 🎴", subtitle: "Quick learning flashcards" },
+      coloring: { title: "Coloring Pages 🎨", subtitle: "Creative coloring fun for kids" },
+      classroom: { title: "Classroom Decor 🏫", subtitle: "Teacher-favorite classroom decorations" }
+    };
+    
+    const params = new URLSearchParams(window.location.search);
+    const cat = params.get('cat') || 'nameplates';
+    const data = categoryData[cat] || categoryData.nameplates;
+    
+    document.getElementById('categoryTitle').textContent = data.title;
+    document.getElementById('categorySubtitle').textContent = data.subtitle;
+    document.getElementById('breadcrumbCat').textContent = data.title;
+    document.title = `${data.title} - PrintLearn Kids`;
+  </script>
+</body>
+</html>
