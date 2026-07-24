@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details - PrintLearn Kids</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">📚</div>
+        <span>PrintLearn Kids</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="category.html?cat=nameplates">Name Plates</a></li>
+        <li><a href="category.html?cat=worksheets">Worksheets</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn">🔍</button>
+        <button class="icon-btn">❤️</button>
+        <button class="icon-btn">🛒<span class="cart-badge">0</span></button>
+        <button class="mobile-toggle">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Product Detail -->
+  <div class="container">
+    <div class="product-detail">
+      
+      <!-- Gallery -->
+      <div class="product-gallery">
+        <div class="product-main-image" id="productEmoji">🦄</div>
+        <div class="product-thumbnails">
+          <div class="thumbnail active">🦄</div>
+          <div class="thumbnail">📄</div>
+          <div class="thumbnail">🖼️</div>
+          <div class="thumbnail">🎨</div>
+        </div>
+      </div>
+      
+      <!-- Details -->
+      <div class="product-details">
+        <div class="product-meta">
+          <span id="productCategory">NAMEPLATES</span>
+          <span>•</span>
+          <span id="productRating">4.9 (128 reviews)</span>
+        </div>
+        
+        <h1 id="productName">Unicorn Kids Door Name Plate</h1>
+        
+        <div class="product-price-lg" id="productPrice">$4.99</div>
+        
+        <p class="product-description" id="productDescription">
+          Magical unicorn themed door name plate perfect for kids' bedrooms. Includes A4 and US Letter sizes, editable Canva template, and high-resolution PNG files.
+        </p>
+        
+        <div class="product-features">
+          <h4>What's Included:</h4>
+          <ul>
+            <li>A4 PDF format (printable)</li>
+            <li>US Letter PDF format</li>
+            <li>Editable Canva template link</li>
+            <li>High-resolution PNG files (300 DPI)</li>
+            <li>Personalization instructions</li>
+            <li>Instant digital download</li>
+          </ul>
+        </div>
+        
+        <div class="quantity-selector">
+          <span>Quantity:</span>
+          <button id="qtyMinus">−</button>
+          <span id="quantityDisplay">1</span>
+          <button id="qtyPlus">+</button>
+        </div>
+        
+        <div class="product-actions">
+          <button class="btn btn-primary btn-lg" id="addToCartBtn">🛒 Add to Cart</button>
+          <button class="btn btn-secondary btn-lg">❤️ Wishlist</button>
+        </div>
+        
+        <div class="product-guarantees">
+          <div class="guarantee-item">
+            <div class="icon">⚡</div>
+            <p>Instant Download</p>
+          </div>
+          <div class="guarantee-item">
+            <div class="icon">🔒</div>
+            <p>Secure Payment</p>
+          </div>
+          <div class="guarantee-item">
+            <div class="icon">💯</div>
+            <p>Satisfaction Guarantee</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Related Products -->
+  <section class="section" style="background: white;">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">You May Also Like</h2>
+      </div>
+      <div class="products-grid" id="featuredProducts"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">📚</div>
+            <span>PrintLearn Kids</span>
+          </a>
+          <p>Creating beautiful, educational printables that make learning fun.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="category.html?cat=nameplates">Name Plates</a></li>
+            <li><a href="shop.html">All Products</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 PrintLearn Kids. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
