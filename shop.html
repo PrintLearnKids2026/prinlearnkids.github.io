@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop All Products - PrintLearn Kids</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">📚</div>
+        <span>PrintLearn Kids</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="category.html?cat=nameplates">Name Plates</a></li>
+        <li><a href="category.html?cat=worksheets">Worksheets</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn">🔍</button>
+        <button class="icon-btn">❤️</button>
+        <button class="icon-btn">🛒<span class="cart-badge">0</span></button>
+        <button class="mobile-toggle">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Shop All Products</h1>
+      <p>Discover our complete collection of printable magic</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> / <span>Shop</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop Layout -->
+  <div class="container">
+    <div class="shop-layout">
+      
+      <!-- Sidebar Filters -->
+      <aside class="shop-sidebar">
+        <div class="filter-group">
+          <h4>Category</h4>
+          <label><input type="checkbox" name="category" value="nameplates"> Name Plates</label>
+          <label><input type="checkbox" name="category" value="worksheets"> Worksheets</label>
+          <label><input type="checkbox" name="category" value="flashcards"> Flashcards</label>
+          <label><input type="checkbox" name="category" value="certificates"> Certificates</label>
+          <label><input type="checkbox" name="category" value="coloring"> Coloring Pages</label>
+          <label><input type="checkbox" name="category" value="classroom"> Classroom Decor</label>
+        </div>
+        
+        <div class="filter-group">
+          <h4>Theme</h4>
+          <label><input type="checkbox" name="theme" value="unicorn"> 🦄 Unicorn</label>
+          <label><input type="checkbox" name="theme" value="dinosaur"> 🦕 Dinosaur</label>
+          <label><input type="checkbox" name="theme" value="space"> 🚀 Space</label>
+          <label><input type="checkbox" name="theme" value="princess"> 🏰 Princess</label>
+          <label><input type="checkbox" name="theme" value="jungle"> 🦁 Jungle</label>
+          <label><input type="checkbox" name="theme" value="ocean"> 🌊 Ocean</label>
+          <label><input type="checkbox" name="theme" value="woodland"> 🐻 Woodland</label>
+          <label><input type="checkbox" name="theme" value="sports"> ⚽ Sports</label>
+        </div>
+        
+        <div class="filter-group">
+          <h4>Price Range</h4>
+          <div class="price-range">
+            <input type="number" id="minPrice" placeholder="Min" value="0" min="0">
+            <span>-</span>
+            <input type="number" id="maxPrice" placeholder="Max" value="100" min="0">
+          </div>
+        </div>
+      </aside>
+      
+      <!-- Products -->
+      <div class="shop-main">
+        <div class="shop-toolbar">
+          <div class="search-box">
+            <input type="text" placeholder="Search products...">
+          </div>
+          <select>
+            <option value="popular">Sort: Most Popular</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+            <option value="rating">Highest Rated</option>
+          </select>
+        </div>
+        
+        <div class="products-grid" id="productsContainer"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">📚</div>
+            <span>PrintLearn Kids</span>
+          </a>
+          <p>Creating beautiful, educational printables that make learning fun.</p>
+          <div class="social-links">
+            <a href="#">📘</a><a href="#">📷</a><a href="#">📌</a><a href="#">🐦</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="category.html?cat=nameplates">Name Plates</a></li>
+            <li><a href="category.html?cat=worksheets">Worksheets</a></li>
+            <li><a href="shop.html">All Products</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 PrintLearn Kids. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
